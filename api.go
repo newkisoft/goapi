@@ -12,7 +12,7 @@ func main() {
     router.HandleFunc("/todos", TodoIndex)
     router.HandleFunc("/todos/{todoId}", TodoShow)
 
-    log.Fatal(http.ListenAndServe(":7070", router))
+    log.Fatal(http.ListenAndServe(":80", router))
 }
 
 func Index(w http.ResponseWriter, r *http.Request) {
